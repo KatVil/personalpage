@@ -1,5 +1,5 @@
-import php_heroku
-Debug =  bool( os.environ.get('PHP_DEBUG', False) )
+import django_heroku
+Debug =  bool( os.environ.get('DJANGO_DEBUG', False) )
 ALLOWED_HOSTS = ['*']
 MIDDLEWARE = [
     'whitenoise.middleware.WhiteNoiseMiddleware', #Добавляем до 'django.middleware.security.SecurityMiddleware',
@@ -16,4 +16,4 @@ ADMINS = [
 ]
 WHITENOISE_USE_FINDERS = True
 STATIC_ROOT = None
-php_heroku.settings(locals()) #В конце
+django_heroku.settings(locals()) #В конце
