@@ -1,2 +1,2 @@
 # personalpage
-Katherina N. Vilinski-Mazur, personal website.
+Katherine N. Vilinski-Mazur, personal website.
